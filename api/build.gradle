@@ -1,0 +1,16 @@
+dependencies {
+//region spring
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:2.2.5.RELEASE'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.4.8'
+    implementation 'org.springframework:spring-web'
+//endregion
+//region lombok
+    compileOnly("org.projectlombok:lombok")
+    annotationProcessor 'org.projectlombok:lombok'
+//endregion
+//region logback
+    implementation("ch.qos.logback.contrib:logback-json-classic:0.1.5")
+    implementation("ch.qos.logback.contrib:logback-jackson:0.1.5")
+//endregion
+}

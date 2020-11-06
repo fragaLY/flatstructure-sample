@@ -1,0 +1,18 @@
+plugins {
+    id "org.flywaydb.flyway" version "7.1.1"
+}
+
+flyway {
+    url = 'jdbc:postgresql://localhost:5432/domain'
+    user = 'user'
+    password = 'P@55w0rd'
+    locations = [ 'db/migrations' ]
+    schemas = ['domain']
+}
+
+dependencies {
+//region db
+    implementation("org.flywaydb:flyway-core")
+    implementation("org.postgresql:postgresql")
+//endregion
+}

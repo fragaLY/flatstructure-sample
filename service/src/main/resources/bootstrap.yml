@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: domain-service
+  main:
+    banner-mode: off
+  cloud:
+    config:
+      token: ${CLOUD_CONFIG_TOKEN}
+      uri: ${CLOUD_CONFIG_URI}
+      fail-fast: true
